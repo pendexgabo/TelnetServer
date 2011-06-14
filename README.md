@@ -39,15 +39,6 @@ This is a basic example
 
 				});
 
-				server.registerCommand(new Command("die_after_respond") {
-
-					@Override
-					public Response handle(String[] arguments) {
-						return new Response("this is the " + this.getName() + " command and I'm to die");
-					}
-
-				});
-
 				server.registerCommand(new Command("exit") {
 
 					@Override
@@ -59,7 +50,6 @@ This is a basic example
 
 
 				server.start();
-				System.out.println("async");
 
 
 			}
